@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab Reservation System - Slot Availability</title>
+    <style>
+        body {
+            font-family: 'Verdana', Geneva, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+
+        nav a:hover {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        p {
+            color: #666;
+        }
+
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lab Reservation System</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="logout.html">Logout</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="reserve-for-student.html">Reserve for a student</a>
+        <a href="remove-reservation.html">Remove reservation</a>
+        <a href="edit-reservation.html">Edit reservation</a>
+        <a href="see-reservations.html">See reservations</a>
+        <a href="user-profile.html">View/Edit User Profile</a>
+        <a href="search-users-free-slots.html">Search for Users/Free Slots</a>
+        <a href="general.html">General</a>
+    </nav>
+
+    <section>
+        <h2>Slot Availability</h2>
+
+        <table id="slotTable">
+            <thead>
+                <tr>
+                    <th>Time Slot</th>
+                    <th>Lab</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="slotavailability.js"></script>
+</body>
+</html>
